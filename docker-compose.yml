@@ -1,0 +1,7 @@
+services:
+  jellyjams-web:
+    build: .
+    container_name: jellyjams-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:$PORT:80"
